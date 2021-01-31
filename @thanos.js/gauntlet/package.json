@@ -1,0 +1,18 @@
+{
+	"name": "@thanos.js/gauntlet",
+	"version": "1.0.1",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"author": "ElCholoGamer",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.22",
+		"typescript": "^4.1.3"
+	},
+	"dependencies": {
+		"@infinitygems/core": "^1.0.3"
+	}
+}
