@@ -49,6 +49,13 @@
   dependencies:
     "@infinitygems/core" "1.0.3"
 
+"@thanos.js/gauntlet@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@thanos.js/gauntlet/-/gauntlet-1.0.1.tgz#217dfaa01e9acd12fcbf0c00ecb9a875ab835828"
+  integrity sha512-Wqbkzs6P/yJwyGKggZFJX9f5VpTxcxnYvqdYhnPC83WAOgDAz6MNewwWwUJrAz1wsyKqEOXzhX6lXDf7JpFMEQ==
+  dependencies:
+    "@infinitygems/core" "^1.0.3"
+
 "@types/node@*", "@types/node@^14.14.22":
   version "14.14.22"
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"

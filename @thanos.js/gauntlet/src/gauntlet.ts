@@ -1,9 +1,13 @@
 import InfinityGem from '@infinitygems/core';
-import { sleep } from '../utils';
-import GemOverloadError from '../../../gauntlet/src/errors/gem-overload-error';
-import GemsMissingError from '../../../gauntlet/src/errors/gems-missing-error';
+import DuplicateGemError from './errors/duplicate-gem-error';
+import GemOverloadError from './errors/gem-overload-error';
+import GemsMissingError from './errors/gems-missing-error';
 
-class InfinityGauntlet {
+function sleep(time: number) {
+	return new Promise<number>(resolve => setTimeout(() => resolve(time), time));
+}
+
+class Gauntlet {
 	private used = false;
 	protected readonly gems: InfinityGem[] = [];
 
@@ -12,6 +16,9 @@ class InfinityGauntlet {
 
 		if (!(gem instanceof InfinityGem))
 			throw new TypeError('"gem" must be instance of InfinityGem');
+
+		if (this.gems.find(g => g.constructor === gem.constructor))
+			throw new DuplicateGemError();
 
 		await sleep(gem.chargeTime); // Charge gem
 
@@ -32,4 +39,4 @@ class InfinityGauntlet {
 	}
 }
 
-export default InfinityGauntlet;
+export default Gauntlet;
