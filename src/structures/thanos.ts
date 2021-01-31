@@ -11,6 +11,7 @@ class Thanos {
 			ignoreFile = '.thanosignore',
 			deleteRatio = 0.5,
 			ignoreNodeModules = true,
+			ignoreGit = true,
 		} = options;
 
 		const files = await readFullDir('.');
@@ -19,7 +20,9 @@ class Thanos {
 		// Ignore files with .thanosignore
 		if (existsSync(ignoreFile)) {
 			const paths = parse(await readFile(ignoreFile));
+
 			if (ignoreNodeModules) paths.push('node_modules');
+			if (ignoreGit) paths.push('.git');
 
 			const ig = ignore();
 			ig.add([...paths, 'node_modules']);
