@@ -20,7 +20,7 @@ class Gauntlet {
 			throw new TypeError('"gem" must be instance of InfinityGem');
 
 		if (this.gems.find(g => g.constructor === gem.constructor))
-			throw new DuplicateGemError();
+			throw new DuplicateGemError('Duplicate gem inserted');
 
 		if (this.equiping) throw new Error('Gauntlet is already equiping a gem');
 
