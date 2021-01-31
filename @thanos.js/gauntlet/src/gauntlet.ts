@@ -9,6 +9,8 @@ function sleep(time: number) {
 
 class Gauntlet {
 	private used = false;
+	private equiping = false;
+
 	protected readonly gems: InfinityGem[] = [];
 
 	public async insertGem(gem: InfinityGem) {
@@ -20,7 +22,12 @@ class Gauntlet {
 		if (this.gems.find(g => g.constructor === gem.constructor))
 			throw new DuplicateGemError();
 
-		await sleep(gem.chargeTime); // Charge gem
+		if (this.equiping) throw new Error('Gauntlet is already equiping a gem');
+
+		// Charge gem
+		this.equiping = true;
+		await sleep(gem.chargeTime);
+		this.equiping = false;
 
 		if (this.gems.length >= 6)
 			throw new GemOverloadError('Gauntlet is already full');
