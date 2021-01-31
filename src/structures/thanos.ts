@@ -7,7 +7,11 @@ import SnapOptions from './snap-options';
 
 class Thanos {
 	public async snapFingers(options: SnapOptions = {}): Promise<string[]> {
-		const { ignoreFile = '.thanosignore', deleteRatio = 0.5 } = options;
+		const {
+			ignoreFile = '.thanosignore',
+			deleteRatio = 0.5,
+			ignoreNodeModules = true,
+		} = options;
 
 		const files = await readFullDir('.');
 		if (!files.length) return [];
@@ -15,8 +19,9 @@ class Thanos {
 		// Ignore files with .thanosignore
 		if (existsSync(ignoreFile)) {
 			const paths = parse(await readFile(ignoreFile));
-			const ig = ignore();
+			if (ignoreNodeModules) paths.push('node_modules');
 
+			const ig = ignore();
 			ig.add([...paths, 'node_modules']);
 			ig.filter(files);
 		}
