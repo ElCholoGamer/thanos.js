@@ -52,6 +52,6 @@ thanos.equipGauntlet(gauntlet);
 
 	const deleted = await thanos.snapFingers();
 
-	console.log(['Deleted fles:', ...deleted].join('\n'));
+	console.log(['Deleted files:', ...deleted].join('\n'));
 })();
 ```
