@@ -1,0 +1,16 @@
+{
+	"name": "@thanos.js/example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "ElCholoGamer",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"@infinitygems/power": "^1.0.1",
+		"@infinitygems/reality": "^1.0.2",
+		"@infinitygems/soul": "^1.0.0",
+		"@infinitygems/time": "^1.0.0",
+		"@thanos.js/core": "^1.0.2",
+		"@thanos.js/gauntlet": "^1.0.2"
+	}
+}
