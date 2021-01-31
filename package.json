@@ -6,7 +6,6 @@
 	"description": "Blazing-fast, light, and flexible file deletion.",
 	"author": "ElCholoGamer",
 	"license": "MIT",
-	"private": true,
 	"scripts": {
 		"build": "tsc"
 	},
