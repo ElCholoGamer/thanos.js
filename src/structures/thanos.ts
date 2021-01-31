@@ -12,6 +12,7 @@ class Thanos {
 		const files = await readFullDir('.');
 		if (!files.length) return [];
 
+		// Ignore files with .thanosignore
 		if (existsSync(ignoreFile)) {
 			const paths = parse(await readFile(ignoreFile));
 			const ig = ignore();
@@ -20,12 +21,10 @@ class Thanos {
 			ig.filter(files);
 		}
 
-		let deleteCount = Math.floor(
-			files.length * Math.max(0, Math.min(1, deleteRatio))
-		);
+		let deleteCount = files.length * Math.max(0, Math.min(1, deleteRatio));
 
-		if (files.length % 2 !== 0) {
-			deleteCount += Math.round(Math.random());
+		if (!Number.isInteger(deleteCount)) {
+			deleteCount = Math.floor(deleteCount) + Math.round(Math.random());
 		}
 
 		for (let i = 0; i < deleteCount; i++) {
