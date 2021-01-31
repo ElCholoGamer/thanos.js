@@ -1,0 +1,21 @@
+{
+	"name": "thanos.js",
+	"version": "1.0.0",
+	"main": "dist/index.ts",
+	"typings": "dist/index.d.ts",
+	"description": "Blazing-fast, light, and flexible file deletion.",
+	"author": "ElCholoGamer",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"build": "tsc"
+	},
+	"keywords": [
+		"thanos",
+		"snap",
+		"gems"
+	],
+	"devDependencies": {
+		"typescript": "^4.1.3"
+	}
+}
