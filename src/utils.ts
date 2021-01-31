@@ -19,3 +19,12 @@ export async function readFullDir(dir: string): Promise<string[]> {
 
 	return total;
 }
+
+export async function isInstalled(pkg: string): Promise<boolean> {
+	try {
+		await import(pkg);
+		return true;
+	} catch {
+		return false;
+	}
+}
