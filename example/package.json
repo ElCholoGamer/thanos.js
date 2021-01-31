@@ -11,6 +11,6 @@
 		"@infinitygems/soul": "^1.0.0",
 		"@infinitygems/time": "^1.0.0",
 		"@thanos.js/core": "^1.0.2",
-		"@thanos.js/gauntlet": "^1.0.2"
+		"@thanos.js/gauntlet": "^1.0.3"
 	}
 }
