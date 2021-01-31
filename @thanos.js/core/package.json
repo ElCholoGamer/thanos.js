@@ -1,7 +1,7 @@
 {
 	"name": "@thanos.js/core",
-	"version": "1.0.1",
-	"main": "dist/index.ts",
+	"version": "1.0.2",
+	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
 	"description": "Blazing-fast, light, and flexible random file deletion.",
 	"author": "ElCholoGamer",
