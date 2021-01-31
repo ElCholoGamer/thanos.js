@@ -1,0 +1,17 @@
+{
+	"name": "@infinitygems/time",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"typings": "dist/index.d.ts",
+	"author": "ElCholoGamer",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@infinitygems/core": "1.0.3"
+	},
+	"devDependencies": {
+		"typescript": "^4.1.3"
+	}
+}

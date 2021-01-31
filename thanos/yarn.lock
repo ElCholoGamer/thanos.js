@@ -2,6 +2,53 @@
 # yarn lockfile v1
 
 
+"@infinitygems/core@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@infinitygems/core/-/core-1.0.3.tgz#671ffbac999b06b289e0e5e6905f83b04557cd8c"
+  integrity sha512-OFZ9OFf2Q797FBELIRv+bj4d1gUWLq316TJg4wFFVudI0GmMvVt36Re3UCEoWss7lgcBdaB9hLeRtpP3de0xNA==
+
+"@infinitygems/mind@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@infinitygems/mind/-/mind-1.0.0.tgz#ca345800f106a4007279f44b8009403dc829ec4b"
+  integrity sha512-JFXod5Igs8Bq/V0n8C6v15Av6N33cGh7T8xO23lu47gnPfJR5ojgO2K9dMjoKPKJZNbq0XHM/SqR7ZiAPa0HVg==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
+"@infinitygems/power@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@infinitygems/power/-/power-1.0.1.tgz#4cf93f95d230a01a9cca265489231c4a5e37fd43"
+  integrity sha512-7j0f0bpIlLueSvUyknNOoe5CogCcaftPrlvKuQGSrc3wI5aGOF/+j78dY5c7nCH5A4e9g/bcD+qFHbCysRXAPA==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
+"@infinitygems/reality@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@infinitygems/reality/-/reality-1.0.2.tgz#11b7ed97f6423f5e8fd9ea84b994412fb9ba1d2e"
+  integrity sha512-kLdGYp5gEu1wDW1Gmz50npptgo0U8Anz+lum2c7qgXsuwHyttOntMmtR/ICKkT4RbSYJOpveYfDxDNL9XLgcCA==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
+"@infinitygems/soul@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@infinitygems/soul/-/soul-1.0.0.tgz#5eaf622da358df239f39c5ffac5380690d2d719a"
+  integrity sha512-2zTjEev5dx8nASiwTG3ZC4zehJfHj5cwPpRM3Q5PEsE/6gLPFeceWTWmNVtmkyPjcLPpyhZM8i+7urzkt5GlQA==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
+"@infinitygems/space@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@infinitygems/space/-/space-1.0.0.tgz#b6c2cfaf7d7e9606c4a37fb043820ffa9d2c3dda"
+  integrity sha512-Fl/33SLB8+lz+Akv/vI6tSc2+01MO+AOlQoL/pbFRRpWs3H06CAMDfWyjh9D+6sBToE48gtHrmrCVFFLLxFQCw==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
+"@infinitygems/time@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@infinitygems/time/-/time-1.0.0.tgz#959c69ec7069c69c7fcb6697ec837d1c4033d15d"
+  integrity sha512-7u6cTssOcq/ko+UbP1JAjL3sfSpzu1/AqJGkRiVysRSbwWcklZ7wQfA9DPMEJPT/cl5j1e96QNjgLc2L4MNIaw==
+  dependencies:
+    "@infinitygems/core" "1.0.3"
+
 "@types/node@*", "@types/node@^14.14.22":
   version "14.14.22"
   resolved "https://registry.npmjs.org/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"

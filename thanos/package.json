@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"main": "dist/index.ts",
 	"typings": "dist/index.d.ts",
-	"description": "Blazing-fast, light, and flexible file deletion.",
+	"description": "Blazing-fast, light, and flexible random file deletion.",
 	"author": "ElCholoGamer",
 	"license": "MIT",
 	"scripts": {
@@ -14,13 +14,21 @@
 		"snap",
 		"gems"
 	],
+	"dependencies": {
+		"ignore": "^5.1.8",
+		"parse-gitignore": "^1.0.1"
+	},
 	"devDependencies": {
 		"@types/node": "^14.14.22",
 		"@types/parse-gitignore": "^1.0.0",
 		"typescript": "^4.1.3"
 	},
-	"dependencies": {
-		"ignore": "^5.1.8",
-		"parse-gitignore": "^1.0.1"
+	"optionalDependencies": {
+		"@infinitygems/mind": "^1.0.0",
+		"@infinitygems/power": "^1.0.1",
+		"@infinitygems/reality": "^1.0.2",
+		"@infinitygems/soul": "^1.0.0",
+		"@infinitygems/space": "^1.0.0",
+		"@infinitygems/time": "^1.0.0"
 	}
 }
