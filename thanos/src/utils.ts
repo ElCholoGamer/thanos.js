@@ -20,11 +20,6 @@ export async function readFullDir(dir: string): Promise<string[]> {
 	return total;
 }
 
-export async function isInstalled(pkg: string): Promise<boolean> {
-	try {
-		await import(pkg);
-		return true;
-	} catch {
-		return false;
-	}
+export function sleep(time: number) {
+	return new Promise<number>(resolve => setTimeout(() => resolve(time), time));
 }

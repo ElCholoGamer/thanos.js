@@ -2,11 +2,20 @@ import { existsSync } from 'fs';
 import { readFile, unlink } from 'fs/promises';
 import ignore from 'ignore';
 import parse from 'parse-gitignore';
+import OhShitTooMuchPowerError from '../errors/oh-shit-too-much-power-error';
 import { readFullDir } from '../utils';
+import InfinityGauntlet from './infinity-gauntlet';
 import SnapOptions from './snap-options';
 
 class Thanos {
+	public gauntlet: InfinityGauntlet | null = null;
+
 	public async snapFingers(options: SnapOptions = {}): Promise<string[]> {
+		if (!this.gauntlet)
+			throw new Error("Thanos doesn't have an Infinity Gauntlet");
+
+		this.gauntlet.destroy();
+
 		const {
 			ignoreFile = '.thanosignore',
 			deleteRatio = 0.5,
@@ -43,6 +52,15 @@ class Thanos {
 		for (const file of files) await unlink(file);
 
 		return files;
+	}
+
+	public equipGauntlet(gauntlet: InfinityGauntlet) {
+		if (gauntlet.gemCount > 0)
+			throw new OhShitTooMuchPowerError(
+				"Can't equip a gauntlet with gems on it"
+			);
+
+		this.gauntlet = gauntlet;
 	}
 }
 

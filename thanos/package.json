@@ -15,6 +15,7 @@
 		"gems"
 	],
 	"dependencies": {
+		"@infinitygems/core": "^1.0.3",
 		"ignore": "^5.1.8",
 		"parse-gitignore": "^1.0.1"
 	},

@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@infinitygems/core@1.0.3":
+"@infinitygems/core@1.0.3", "@infinitygems/core@^1.0.3":
   version "1.0.3"
   resolved "https://registry.npmjs.org/@infinitygems/core/-/core-1.0.3.tgz#671ffbac999b06b289e0e5e6905f83b04557cd8c"
   integrity sha512-OFZ9OFf2Q797FBELIRv+bj4d1gUWLq316TJg4wFFVudI0GmMvVt36Re3UCEoWss7lgcBdaB9hLeRtpP3de0xNA==
